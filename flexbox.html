@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Compact Top-Left Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 300px;
+      margin: 10px;
+      border: 1px solid #000;
+    }
+    .logo,
+    .navigation,
+    .banner,
+    .body-area,
+    .sidebar,
+    .footer {
+      border: 1px solid #000;
+    }
+    .logo {
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      font-weight: bold;
+    }
+    .navigation {
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+    }
+    .banner {
+      height: 50px;
+      text-align: center;
+      line-height: 35px;
+    }
+    .main {
+      display: flex;
+      height: 120px;
+    }
+    .sidebar {
+      width: 50%;
+      padding: 5px;
+      font-size: 12px;
+    }
+    .body-area {
+      width: 50%;
+      padding: 5px;
+      font-size: 12px;
+    }
+    .footer {
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">Logo</div>
+    <div class="navigation">Navigation</div>
+    <div class="banner">Banner</div>
+
+    <div class="main">
+      <div class="sidebar">Side Bar</div>
+        <div class="body-area">Body Area</div>
+     
+    </div>
+
+    <div class="footer">Footer</div>
+  </div>
+
+</body>
+</html> 

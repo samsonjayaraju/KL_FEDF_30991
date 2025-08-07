@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .logo-nav {
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f2f2f2;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #333333;
+      font-weight: bold;
+    }
+
+    .head-banner {
+      background-color: #e3e3df;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      font-size: 20px;
+    }
+
+    .text-blocks {
+      background-color: #e3e2df;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .text {
+      width: 45%;
+      font-size: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .grid-box {
+      background-color: #eee;
+      padding: 30px;
+      text-align: center;
+      border: 1px solid #ccc;
+      font-weight: bold;
+    }
+
+    .footer {
+      background-color: #ddd;
+      text-align: center;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="row logo-nav">
+    <div class="logo">MyLogo</div>
+    <div class="nav">
+      
+      <a href="#">NAVIGATION</a>
+    </div>
+  </div>
+
+  <div class="row head-banner">
+    <div>HEADER/BANNER</div>
+  </div>
+
+  <div class="row text-blocks">
+    <div class="text" align="center"> INTO TEXT</div>
+    
+  </div>
+
+  <div class="grid">
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+  </div>
+
+  <div class="footer">
+  FOOTER
+  </div>
+
+</div>
+
+</body>
+</html>

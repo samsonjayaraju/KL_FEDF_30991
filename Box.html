@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW.1</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f0f0f0;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: #ccc;
+    padding: 10px;
+}
+
+.main-grid {
+    margin-top: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.grid-item {
+    background: #bbb;
+    height: 80px;
+}
+
+.bottom-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.box {
+    background: #aaa;
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.footer {
+    background: #ccc;
+    text-align: center;
+    padding: 10px;
+}
+
+            
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Logo</div>
+        <nav class="navigation">Navigation</nav>
+    </header>
+
+    <main class="main-grid">
+        <div class="grid-container">
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+        </div>
+
+        <div class="bottom-boxes">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        Footer
+    </footer>
+</body>
+</html>
