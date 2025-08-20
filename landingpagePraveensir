@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page with Media queries</title>
+    <style>
+        *{
+            margin :0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .header-div{           
+            display: flex;
+            justify-content: space-between;
+            padding : 20px;
+            margin: 20px;
+            background-color: gold;
+        }
+        nav ul{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            align-items: center;
+            
+        }
+        a{
+            text-decoration: none;
+            color : black;
+            cursor: pointer;
+            padding: 10px;
+
+        }
+
+        .hero-section-div{
+            height: 100vh;
+            background-image: url('https://plus.unsplash.com/premium_photo-1668114375111-e90b5e975df6?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            width: 100vw;
+            margin: 20px;
+            padding : 20px;
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+
+        /* About us section */
+        .about-us-section-div{
+            margin: 20px;
+            padding:20px;
+            background-color: lightpink;
+            color : darkslategrey
+        }
+
+        .about-us-section-div h2{
+            text-align: center;
+        }
+
+        /* Testimonial section */
+        .testimonials-section-div{
+            margin : 20px;
+            background-color:  lightgoldenrodyellow;
+        }
+
+        .testimonials-section-div h2{
+            text-align: center;
+        }
+
+        .testimonials-multicolumn-div{
+            display : flex;
+        }
+
+        .testimonials-multicolumn-div  .testimonial-item{
+            border : 2px solid grey;
+            margin : 1px;
+            padding : 40px 2px;
+            width: 33%;
+        }
+    </style>
+</head>
+<body>
+     <!-- header section -->
+    <div class="header-div">
+        <h1>Logo</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+        <!-- hero-section -->
+    <div class="hero-section-div"></div>
+
+    <!-- About Us section -->
+     <div class="about-us-section-div">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora enim, maxime illo alias voluptatem maiores eum cupiditate aliquid odit. Cum quo, fuga eligendi reiciendis reprehenderit impedit, molestiae officiis delectus enim quas totam consectetur quisquam! Vel excepturi corporis saepe accusamus nobis iure aliquid voluptatem, totam vero iste exercitationem eaque. Dolores culpa magni quis magnam voluptates veritatis tempora a, at quasi rerum. Earum molestiae cum consectetur illum iusto quae soluta quaerat minus in unde adipisci enim quidem a id consequuntur repudiandae, veniam distinctio! Sapiente minima rerum ad quis esse quos aliquid repellat, distinctio magnam odit laudantium in inventore expedita assumenda recusandae aspernatur./p>
+     </div>
+
+     <!-- Testimonials section -->
+    <div class="testimonials-section-div">
+        <h2>Testimonials</h2>
+        <div class="testimonials-multicolumn-div">
+            <div class="testimonial-item">
+                <p>"This service has changed my life for the better!"</p>
+                <p>- Happy Customer</p>
+            </div>
+            <div class="testimonial-item">
+                <p>"I can't recommend this enough, it's fantastic!"</p>
+                <p>- Satisfied Client</p>
+            </div>
+            <div class="testimonial-item">
+                <p>"An amazing experience from start to finish."</p>
+                <p>- Grateful User</p>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        Website created and maintained by Praveen &copy;
+ 2025    </footer>
+</body>
+</html>

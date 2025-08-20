@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .header-div{
+            
+            
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            padding: 10px;
+            background-color: gold;
+        }
+        nav ul{
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                align-items: center;
+
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                cursor: pointer;
+                
+                padding: 10px;
+            }
+            .hero-section-div{
+
+                height: 400px;
+                background-image: url(https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+                width: 100vw;
+                margin: 20px;
+                padding: 20px;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .about-us-section-div{
+                margin: 20px;
+                padding: 20px;
+                background-color: pink;
+                color: darkslategray;
+
+            }
+            .about-us-section-div h2{
+
+                text-align: center;
+
+            }
+            .testimonials-section-div{
+                margin: 20px;
+                padding: 20px;
+                background-color: rgb(255, 255, 137);
+
+            }
+
+            .testimonials-section-div h2{
+                
+                text-align: center;
+
+            }
+            .testimonials-multicolumn-div{
+            display : flex;
+        }
+
+        .testimonials-multicolumn-div  .testimonial-item{
+            border : 2px solid grey;
+            margin : 1px;
+            padding : 40px 2px;
+            width: 33%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-div">
+        <h1>My Website Logo</h1>
+        <nav>
+            <ul>
+
+            
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+        </ul>
+            </nav>
+    </div>
+    <!--Hero Container-->
+    <div class="hero-section-div">
+        
+    </div>
+    <!--About us Container-->
+    <div class="about-us-section-div">
+        <h2>About Us</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit dolorem labore deserunt nam harum nulla optio explicabo illum itaque laudantium ex quae et, fuga dicta, incidunt eos maxime fugit assumenda!
+        </p>
+    </div>
+    <!--Testimonials Section-->
+    <div class="testimonials-section-div">
+        <h2>Testimonials</h2>
+        <div class="testimonials-multicolumn-div">
+            <div class="testimonial-item">
+                <p>"This service has changed my life for the better!"</p>
+                <p>- Happy Customer</p>
+            </div>
+            <div class="testimonial-item">
+                <p>"I can't recommend this enough, it's fantastic!"</p>
+                <p>- Satisfied Client</p>
+            </div>
+            <div class="testimonial-item">
+                <p>"An amazing experience from start to finish."</p>
+                <p>- Grateful User</p>
+            </div>
+        </div>
+    </div>
+    <footer>Website Created by Samson in Guidence with Dr.Praveen Kumar &copy; 2025</footer>
+</body>
+</html>
