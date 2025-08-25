@@ -1,0 +1,7 @@
+echo "# Demo" >> README.md
+git init
+git add README.md
+git commit -m "Demo Samson"
+git branch -M main
+git remote add origin https://github.com/samsonjayaraju/Demo.git
+git push -u origin main
