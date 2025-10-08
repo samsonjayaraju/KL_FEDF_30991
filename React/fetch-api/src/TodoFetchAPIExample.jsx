@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-const url = "https://jsonplaceholder.typicode.com/users";
+const url = "https://jsonplaceholder.typicode.com/todos";
 
-const FetchAPIExample = () => {
+const TodoFetchAPIExample = () => {
   const [users, setUsers] = useState([]);
 
   const urlhandler = async () => {
@@ -31,25 +31,25 @@ const FetchAPIExample = () => {
       <table className='table table-striped table-bordered'>
         <thead>
           <tr>
-            <td>Id</td>
-            <td>Name</td>
-            <td>Username</td>
-            <td>Email</td>
-            <td>Street</td>
-            <td>Geo Location</td>
+            <td>UserId</td>
+            <td>ID</td>
+            <td>Title</td>
+            <td>Task</td>
+            {/* <td>Street</td>
+            <td>Geo Location</td> */}
           </tr>
         </thead>
         <tbody>
           {users.map(user => (
             <tr key={user.id}>
+              <td>{user.userId}</td>
               <td>{user.id}</td>
-              <td>{user.name}</td>
-              <td>{user.username}</td>
-              <td>{user.email}</td>
-              <td>{user.address.street}</td>
+              <td>{user.title}</td>
+              <td>{user.completed.toString()}</td>
+              {/* <td>{user.address.street}</td>
               <td>
                 {user.address.geo.lat}, {user.address.geo.lng}
-              </td>
+              </td> */}
             </tr>
           ))}
         </tbody>
@@ -58,4 +58,4 @@ const FetchAPIExample = () => {
   );
 };
 
-export default FetchAPIExample;
+export default TodoFetchAPIExample;
