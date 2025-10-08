@@ -28,8 +28,8 @@ const TodoFetchAPIExample = () => {
         {JSON.stringify(users, null, 2)}
       </div> */}
 
-      <table className='table table-striped table-bordered'>
-        <thead>
+      <table className='table table-bordered'>
+        <thead className='table-dark' >
           <tr>
             <td>UserId</td>
             <td>ID</td>
