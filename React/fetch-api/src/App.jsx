@@ -4,6 +4,7 @@ import TodoFetchAPIExample from "./TodoFetchAPIExample";
 import AxiosFetchAPIExample from "./AxiosFetchAPIExpmple";
 import ReqresAPIExample from "./ReqresAPIExample";
 import WeatherAPI from "./WeatherAPI";
+import Weather from "./WeatherExample";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       {/* <FetchAPIExample/> */}
       {/* <TodoFetchAPIExample/> */}
       {/* <ReqresAPIExample/> */}
-      <WeatherAPI/>
+      {/* <WeatherAPI/> */}
+      <Weather/>
     </>
   );
 }
