@@ -13,8 +13,8 @@ function App() {
       {/* <FetchAPIExample/> */}
       {/* <TodoFetchAPIExample/> */}
       {/* <ReqresAPIExample/> */}
-      {/* <WeatherAPI/> */}
-      <Weather/>
+      <WeatherAPI/>
+      {/* <Weather/> */}
     </>
   );
 }
